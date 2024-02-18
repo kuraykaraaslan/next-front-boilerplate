@@ -47,7 +47,4 @@ We welcome contributions from the community! If you encounter any issues, have s
 
 This project is licensed under the MIT License.
 
----
 
-*Pegasus React.JS Frontend Theme - Created with ❤️ by kuray.dev*
-```
