@@ -17,13 +17,8 @@ const FeedCard = () => {
             </div>
             <div className="col-span-10">
                 <h3 className="text-xl font-bold">Title</h3>
-                <p className="text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae sapien ut libero lacinia ultrices
-                    nec sit amet nunc. Nullam nec orci sit amet nunc. Nullam nec orci.</p>
                 <a href="#" className="text-sm justify-center">Read More <FontAwesomeIcon icon={faCaretRight} style={{ height: '1rem', width: '1rem' }} /></a>
             </div>
-
-
-
         </div>
     );
 };

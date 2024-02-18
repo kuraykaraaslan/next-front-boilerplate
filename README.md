@@ -35,7 +35,7 @@ For detailed documentation and usage instructions, simply open the specified com
 
 ## Screenshots
 
-![screenshotone](/static/screenshotone.png)
+![screenshotone](/static/home.png)
 ![screenshottwo](/static/screenshottwo.png)
 ![screenshotthree](/static/screenshotthree.png)
 

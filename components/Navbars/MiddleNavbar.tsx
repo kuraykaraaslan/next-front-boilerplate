@@ -8,7 +8,7 @@ const MiddleNavbar = () => {
 
     return (
         <nav className="mx-auto flex items-stretch max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
-            <div className="flex lg:flex-1 p-2 gap-6">
+            <div className="flex lg:flex-1 p-2 gap-6 pl-4 md:pl-0">
                 <div className="relative group inline-flex items-left justify-left text-base font-medium">
                     <img src="https://placehold.co/400" alt="Pegasus" className="max-h-12 text-primary" />
                 </div>
@@ -21,15 +21,15 @@ const MiddleNavbar = () => {
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-6 divide-x">
                 <div className="relative group inline-flex items-center justify-right text-base font">
-                    <a href="#" className="text-sm leading-6 text-gray-900">Company</a>
+                    <a href="#" className="text-sm leading-6 text-gray-900">FAQ</a>
                 </div>
                 <div className="relative group inline-flex items-center justify-right text-base font pl-6">
-                    <a href="#" className="text-sm leading-6 text-gray-900">Contact</a>
+                    <a href="#" className="text-sm leading-6 text-gray-900">Careers</a>
                 </div>
 
             </div>
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center px-6 divide-x gap-2">
-                <div className="relative group inline-flex items-center justify-center text-base font-medium gap-2">
+            <div className="flex lg:flex-1 lg:justify-end items-center px-6 md:divide-x gap-2">
+                <div className="hidden lg:flex relative group inline-flex items-center justify-center text-base font-medium gap-2">
                     <a href="#" className="text-sm font-semibold hover:text-primary"><FontAwesomeIcon icon={faFacebook} className="h-4 w-4" aria-hidden="true" /></a>
                     <a href="#" className="text-sm font-semibold hover:text-primary"><FontAwesomeIcon icon={faTwitter} className="h-4 w-4" aria-hidden="true" /></a>
                     <a href="#" className="text-sm font-semibold hover:text-primary"><FontAwesomeIcon icon={faInstagram} className="h-4 w-4" aria-hidden="true" /></a>

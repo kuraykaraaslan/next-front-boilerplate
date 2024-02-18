@@ -11,10 +11,10 @@ const TopNavbar = () => {
                     <a href="#" className="text-sm leading-6 text-gray-900">Marketplace</a>
                 </div>
                 <div className="relative group inline-flex items-center justify-center text-base px-3 p-3">
-                    <a href="#" className="text-sm leading-6 text-gray-900">Company</a>
+                    <a href="#" className="text-sm leading-6 text-gray-900">Community</a>
                 </div>
                 <div className="relative group inline-flex items-center justify-center text-base px-3 p-3">
-                    <a href="#" className="text-sm leading-6 text-gray-900">Contact</a>
+                    <a href="#" className="text-sm leading-6 text-gray-900">Support</a>
                 </div>
 
             </div>
