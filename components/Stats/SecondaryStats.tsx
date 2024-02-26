@@ -7,7 +7,7 @@ import React from 'react';
 
 const SecondaryStats = () => {
     return (
-        <div className="container mx-auto lg:px-8 max-w-7xl mb-8 bg-primary p-4 shadow-lg">
+        <div className="lg:px-8 mb-8 bg-primary p-4 shadow-lg">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="p-4 rounded-lg justify-center text-center">
                     <h3 className="text-3xl font-bold text-white">1000</h3>

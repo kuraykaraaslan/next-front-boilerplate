@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const DefaultNavbar = () => {
 
     return (
+        <div className="border-b border-gray-200 shadow-sm">
         <nav className="mx-auto flex items-stretch max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
-            <div className="flex lg:flex-1 p-6">
+            <div className="flex lg:flex-1 py-6 pl-4 lg:pl-0">
                 <DefaultLogo />
             </div>
             <div className="flex lg:hidden">
@@ -35,10 +36,10 @@ const DefaultNavbar = () => {
                     <a href="#" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Marketplace</a>
                 </div>
                 <div className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Company</a>
+                    <a href="/about" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">About</a>
                 </div>
                 <div className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Contact</a>
+                    <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Contact</a>
                 </div>
 
             </div>
@@ -46,6 +47,7 @@ const DefaultNavbar = () => {
                 <a href="#" className="btn text-sm font-semibold leading-6 bg-primary text-base text-white rounded-s">Log in</a>
             </div>
         </nav >
+        </div>
     )
 
 };
