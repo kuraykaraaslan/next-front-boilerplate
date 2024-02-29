@@ -21,9 +21,9 @@ const DefaultNavbar = () => {
                 </button>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-center">
-                <div className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
-                <a href="#" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Product</a>
-                </div>
+                <a href="#" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
+                <div className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Product</div>
+                </a>
                 <div className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
                     <a href="#" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Features</a>
                     <FontAwesomeIcon
@@ -32,15 +32,16 @@ const DefaultNavbar = () => {
                         aria-hidden="true"
                     />
                 </div>
-                <div className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Marketplace</a>
-                </div>
-                <div className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
-                    <a href="/about" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">About</a>
-                </div>
-                <div className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
-                    <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Contact</a>
-                </div>
+                <a href="/about" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
+                    <div className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Marketplace</div>
+                </a>
+                <a href="/about" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
+                    <div className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">About</div>
+                </a>
+                
+                <a href="/contact" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
+                    <div className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Contact</div>
+                </a>
 
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center px-6">

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DefaultLogo = () => {
     return (
-        <a href="#" className="-m-1.5 p-1.5 flex items-center">
+        <a href="/" className="-m-1.5 p-1.5 flex items-center">
             <span className="sr-only">Pegasus</span>
             <FontAwesomeIcon
                 icon={faHorseHead}
