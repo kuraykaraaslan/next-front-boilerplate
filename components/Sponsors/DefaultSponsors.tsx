@@ -14,6 +14,9 @@ const DefaultSponsors = ({ children }: { children?: ReactNode[] }) => {
         if (sliderRef.current) {
             const slider = sliderRef.current;
             const scrollAmount = slider.scrollLeft;
+            if (!children || children.length === 0) {
+                return;
+            }
             const slideWidth = slider.scrollWidth / children?.length;
             const slideCount = Math.round(scrollAmount / slideWidth);
             const nextSlide = slideCount + 1;
@@ -29,6 +32,9 @@ const DefaultSponsors = ({ children }: { children?: ReactNode[] }) => {
         if (sliderRef.current) {
             const slider = sliderRef.current;
             const scrollAmount = slider.scrollLeft;
+            if (!children || children.length === 0) {
+                return;
+            }
             const slideWidth = slider.scrollWidth / children?.length;
             const slideCount = Math.round(scrollAmount / slideWidth);
             const nextSlide = slideCount - 1;

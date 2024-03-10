@@ -2,14 +2,14 @@
 
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faTelegram, faLinkedin, faGithub, faXTwitter, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTelegram, faLinkedin, faGithub, faXTwitter, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 
 const DefaultContact = () => {
 
-    const formSubmit = (e) => {
+    const formSubmit = (e : React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log(name, email, phone, message);
+        console.log("Form Submitted");
     }
 
     return (
@@ -37,9 +37,9 @@ const DefaultContact = () => {
                             </div>
                             <div className="mt-2">
                                 <label htmlFor="message" className="block mb-2 text-sm font-medium">Message</label>
-                                <textarea id="message" rows="6" className="block p-2.5 w-full text-sm  border border-1 border-gray-500 min-h-[150px] bg-gray-100 resize-none text-black" placeholder="Your message" required></textarea>
+                                <textarea id="message" className="block p-2.5 w-full text-sm  border border-1 border-gray-500 min-h-[150px] bg-gray-100 resize-none text-black" placeholder="Your message" required></textarea>
                             </div>
-                            <button type="submit" className="mt-2 py-3 px-5 text-sm font-medium bg-base-300  hover:bg-primary hover:text-white focus:outline-none focus:bg-primary-600 border border-1 border-gray-500 light:placeholder-black" onClick={formSubmit}>Send</button>
+                            <button type="submit" className="mt-2 py-3 px-5 text-sm font-medium bg-base-300  hover:bg-primary hover:text-white focus:outline-none focus:bg-primary-600 border border-1 border-gray-500 light:placeholder-black" onClick={() => formSubmit}>Send</button>
                         </form>
                     </div>
                 </div>
