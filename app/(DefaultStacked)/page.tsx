@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import DefaultCaresoulSmooth from "@/components/Carousels/DefaultCaresoulSmooth";
-import DefaultFeed from "@/components/Feed/DefaultFeed";
+import DefaultFeedWithImage from "@/components/Feed/DefaultFeedWithImage";
 import DefaultStats from "@/components/Stats/SecondaryStats";
 import DefaultSponsors from "@/components/Sponsors/DefaultSponsors";
 import SponsorCard from "@/components/Sponsors/SponsorCard";
@@ -19,7 +19,7 @@ export default function Home() {
         <img src="https://picsum.photos/1920/1080?random" alt="3" width={1920} height={1080} />
 
       </DefaultCaresoulSmooth>
-      <DefaultFeed />
+      <DefaultFeedWithImage />
       <DefaultStats />
       <DefaultFeedNoContent />
 
