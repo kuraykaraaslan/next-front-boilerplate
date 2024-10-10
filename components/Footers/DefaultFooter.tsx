@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const DefaultFooter = () => {
 
   return (
-    <div className="bg-white border-t border-gray-400">
+    <div className="bg-black text-white border-t border-gray-400">
       <footer className="footer py-10 text-center max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
         <nav>
           <h6 className="footer-title">Services</h6>
@@ -36,7 +36,7 @@ const DefaultFooter = () => {
 
       </footer>
       <div className="border-t border-gray-400">
-      <footer className="footer px-10 py-4 bg-white text-center max-w-7xl mx-auto">
+      <footer className="footer px-10 py-4 text-center max-w-7xl mx-auto">
         <aside className="items-center grid-flow-col">
           <p>© 2024 Pegasus. All rights reserved.</p>
         </aside>
