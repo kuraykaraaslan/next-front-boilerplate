@@ -1,8 +1,9 @@
 'use client';
 import DefaultLogo from "../Logo/DefaultLogo"
-import { faBars, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faCaretDown, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 
 const DefaultNavbar = () => {
     const [isFeaturesMenuOpen, setIsFeaturesMenuOpen] = useState(false);
@@ -18,9 +19,9 @@ const DefaultNavbar = () => {
 
     return (
         <>
-        <div className="border-b border-gray-200 shadow-sm">
+        <div className="">
             <nav className="mx-auto flex items-stretch max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
-                <div className="flex lg:flex-1 py-6 pl-4 lg:pl-0">
+                <div className="py-6 pl-4 lg:pl-0">
                     <DefaultLogo />
                 </div>
                 <div className="flex lg:hidden">
@@ -34,40 +35,23 @@ const DefaultNavbar = () => {
                     </button>
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-center">
-                    <a href="#" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
-                        <div className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Product</div>
+                    <a href="#" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-primary">
+                        <div className="text-sm leading-6">Product</div>
                     </a>
-                    <div className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary" onMouseEnter={toggleFeaturesMenu} onMouseLeave={toggleFeaturesMenu}>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Features</a>
-                        <FontAwesomeIcon
-                            icon={faCaretDown}
-                            className="h-5 w-5 ml-2"
-                            aria-hidden="true"
-                        />
-                        {isFeaturesMenuOpen && (
-                            <div style={{ display: "block" }}  className="absolute z-10 mt-48 align-items-center justify-center w-52">
-                                <div className="bg-white shadow-lg py-1 grid grid-cols-1 gap-4 border-t-2 border-primary w-52 mt-4 transform translate-x-10">
-                                    <div className="col-span-1">
-                                        <a href="#" className="text-gray-900 hover:text-primary block px-4 py-2 text-sm">Feature 1</a>
-                                        <a href="#" className="text-gray-900 hover:text-primary block px-4 py-2 text-sm">Feature 2</a>
-                                        <a href="#" className="text-gray-900 hover:text-primary block px-4 py-2 text-sm">Feature 3</a>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                    <a href="/about" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
-                        <div className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Marketplace</div>
+                    <a href="/about" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-primary">
+                        <div className="text-sm leading-6">Marketplace</div>
                     </a>
-                    <a href="/about" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
-                        <div className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">About</div>
+                    <a href="/about" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-primary">
+                        <div className="text-sm leading-6">About</div>
                     </a>
-                    <a href="/contact" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-white hover:bg-primary">
-                        <div className="text-sm font-semibold leading-6 text-gray-900 group-hover:text-white">Contact</div>
+                    <a href="/contact" className="relative group inline-flex items-center justify-center text-base font-medium px-6 hover:text-primary">
+                        <div className="text-sm leading-6">Contact</div>
                     </a>
                 </div>
-                <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center px-6">
-                    <a href="#" className="btn text-sm font-semibold leading-6 bg-primary text-base text-white rounded-s">Log in</a>
+                <div className="hidden lg:flex lg:justify-end justify-center items-center">
+                    <a href="#" className="btn text-sm font-semibold leading-6 bg-primary text-base text-white rounded-full">
+                        <FontAwesomeIcon icon={faUser} className="h-3" aria-hidden="true" />
+                    </a>
                 </div>
             </nav>
         </div>

@@ -23,7 +23,7 @@ const CitySelector = () => {
 
     return (
         <>
-            <div className="select-none flex h-12 items-center justify-center font-semibold text-white px-2 hover:bg-gray-800 cursor-pointer"
+            <div className="select-none flex h-8 items-center justify-center font-semibold text-white px-2 hover:bg-gray-800 cursor-pointer"
                 onClick={openModal}>
                 <span>{cityArray.find(item => item.city === city)?.label}</span>
             </div>

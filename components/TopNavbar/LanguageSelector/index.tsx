@@ -21,7 +21,7 @@ const LanguageSelector = () => {
     return (
         <>
 
-                <div className="select-none flex h-12 items-center justify-center font-semibold text-white px-2 hover:bg-gray-800 cursor-pointer"
+                <div className="select-none flex h-8 items-center justify-center font-semibold text-white px-2 hover:bg-gray-800 cursor-pointer"
                 onClick={openModal}>
                     <span className="flex items-center gap-2">
                          {languageArray.find(item => item.lang === language)?.icon} {languageArray.find(item => item.lang === language)?.label}</span>
